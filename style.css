@@ -1150,38 +1150,69 @@ section {
         display: none !important;
     }
 
+    .price.show-price {
+        display: block !important;
+        animation: fadeInPrice 0.5s ease forwards;
+    }
+
+    @keyframes fadeInPrice {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* --- Gift Card --- */
     .giftcard-layout {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
         padding: 0;
     }
 
     .giftcard-images {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
     .gift-img {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .giftcard-mobile-buttons {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 15px;
         align-items: center;
     }
 
     .giftcard-mobile-buttons .btn-dark {
+        width: 250px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 14px 10px;
+        font-size: 15px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gc-mobile-hidden-content {
+        display: none;
         width: 100%;
-        margin: 0;
-        padding: 12px 10px;
-        font-size: 13px;
-        border-radius: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .gc-mobile-hidden-content.show-gc {
+        display: block;
+        animation: fadeInPrice 0.4s ease forwards;
     }
 
     /* --- Відгуки --- */

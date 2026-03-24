@@ -139,7 +139,6 @@
             </div>
             <div class="container">
                 <div class="slider-wrapper">
-                    <div class="arrow left mobile-only">❮</div>
                     <div class="services-grid">
                         <div class="service-item">
                             <div class="service-circle srv-manicure"></div>
@@ -170,7 +169,6 @@
                             <p>Послуги для<br>чоловіків</p>
                         </div>
                     </div>
-                    <div class="arrow right mobile-only">❯</div>
                 </div>
 
                 <div style="text-align: center;">
@@ -289,8 +287,16 @@
                 </div>
 
                 <div class="giftcard-mobile-buttons mobile-only">
-                    <button class="btn-dark">Оберіть суму</button>
-                    <button class="btn-dark">Оберіть послугу</button>
+                    <button class="btn-dark" id="btn-gc-sum">Оберіть суму</button>
+                    <div class="gc-mobile-hidden-content" id="gc-content-sum">
+                        <div class="gc-sum-options" style="justify-content: center;">
+                            <span class="gc-pill start">800 грн</span>
+                            <span class="gc-pill begin">1000 грн</span>
+                            <span class="gc-pill middle">1500 грн</span>
+                            <span class="gc-pill end">2000 грн</span>
+                            <span class="gc-pill endpick">5000 грн</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -306,7 +312,6 @@
                     <div class="pill-title">Відгуки</div>
                 </div>
                 <div class="slider-wrapper container">
-                    <div class="arrow left mobile-only">❮</div>
 
                     <div class="reviews-flex">
                         <div class="review-card">
@@ -348,8 +353,6 @@
                             <p class="review-text">Обслуговуючий персонал просто супер.</p>
                         </div>
                     </div>
-
-                    <div class="arrow right mobile-only">❯</div>
                 </div>
             </section>
     </main>
