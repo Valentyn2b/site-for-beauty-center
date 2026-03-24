@@ -276,18 +276,39 @@ section {
 
 .img-placeholder-1 {
     background-image: url(images/Ellipse\ 2.png);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-placeholder-1:hover {
+    transform: scale(1.1);
 }
 
 .img-placeholder-2 {
     background-image: url(images/Ellipse\ 5.png);
+    transition: transform 0.3s ease-in-out;
 }
+
+.img-placeholder-2:hover {
+    transform: scale(1.1);
+}
+
 
 .img-placeholder-3 {
     background-image: url(images/Ellipse\ 3.png);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-placeholder-3:hover {
+    transform: scale(1.1);
 }
 
 .img-placeholder-4 {
     background-image: url(images/Ellipse\ 4.png);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-placeholder-4:hover {
+    transform: scale(1.1);
 }
 
 /* Послуги  */
@@ -330,42 +351,77 @@ section {
     background-image: url(images/image\ 3.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-manicure:hover {
+    transform: translateY(-15px);
 }
 
 .srv-nails {
     background-image: url(images/image\ 4.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-nails:hover {
+    transform: translateY(-15px);
 }
 
 .srv-pedicure {
     background-image: url(images/image\ 5.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-pedicure:hover {
+    transform: translateY(-15px);
 }
 
 .srv-makeup {
     background-image: url(images/image\ 6.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-makeup:hover {
+    transform: translateY(-15px);
 }
 
 .srv-lashes {
     background-image: url(images/image\ 14.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-lashes:hover {
+    transform: translateY(-15px);
 }
 
 .srv-brows {
     background-image: url(images/image\ 8.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-brows:hover {
+    transform: translateY(-15px);
 }
 
 .srv-men {
     background-image: url(images/image\ 9.png);
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.srv-men:hover {
+    transform: translateY(-15px);
 }
 
 
@@ -467,6 +523,86 @@ section {
     border-radius: 20px;
     font-size: 14px;
     white-space: nowrap;
+}
+
+.start {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.start:hover {
+    transform: translateY(-2px);
+    background-color: #8b807a;
+}
+
+.begin {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.begin:hover {
+    transform: translateY(-4px);
+    background-color: #8b807a;
+}
+
+.middle {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.middle:hover {
+    transform: translateY(-8px);
+    background-color: #8b807a;
+}
+
+.end {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.end:hover {
+    transform: translateY(-16px);
+    background-color: #8b807a;
+}
+
+.endpick {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.endpick:hover {
+    transform: translateY(-23px);
+    background-color: #8b807a;
+    color: white;
+}
+
+.endpick::after {
+    content: "Знижка 5% (-250 грн)";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: normal;
+    white-space: nowrap;
+    pointer-events: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.endpick:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: 130%;
 }
 
 .gc-services-options {
@@ -588,6 +724,11 @@ section {
 }
 
 /*  Футер */
+
+.adress {
+    color: white;
+}
+
 .footer {
     background-color: #817a76;
     color: #fff;
@@ -625,6 +766,7 @@ section {
 
 .underline {
     text-decoration: underline;
+    color: white;
     margin-bottom: 10px;
 }
 
